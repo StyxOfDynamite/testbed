@@ -38,33 +38,10 @@
             </div>
         </nav>
         <section class="page-section clearfix">
-            <script>
-                // Example form values
-const formValues = {
-  chatMessage: 'John Doe',
-};
-
-// The URL you are posting to
-const url = 'https://app.sphinxmind.com/api/chat/title-completion';
-
-// Posting data with fetch
-fetch(url, {
-  method: 'POST', // Specify the method
-  headers: {
-    'Content-Type': 'application/json', // Specify the content type
-  },
-  body: JSON.stringify(formValues), // Convert the JavaScript object to a JSON string
-})
-.then(response => response.json()) // Parse the JSON response
-.then(data => {
-  // Handle success
-  console.log('Data posted successfully:', data);
-})
-.catch(error => {
-  // Handle error
-  console.error('Error posting data:', error);
-});
-</script>
+            <form action="https://api.hudson.ai/api/v1/documents" method="post">
+                <input type="file" name="file" />
+                <button type="submit">Evil</button>
+            </form>
 
         </section>
         <section class="page-section cta">
