@@ -48,12 +48,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </nav>
-        <section class="page-section clearfix">
-            <form action="https://api.hudson.ai/api/v1/documents" method="post" enctype="multipart/form-data">
-                <input type="file" name="file" />
-                <button type="submit">Evil</button>
-            </form>
-
+        <section class="page-section cta">
+            <div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2>Contact Us</h2>
+      <form id="contactForm" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
         </section>
         <section class="page-section cta">
             <div class="container">
