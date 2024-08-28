@@ -72,9 +72,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
         </section>
-
-        <button id="install" onclick="install()" class="btn btn-primary">Install</button>
-
         <script>
             function install() {
                 fetch('https://api.partner.io/install', {
@@ -88,8 +85,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         appId: 123456,
                         XFF: '82.11.210.240'
                 })
-            }
+            })
+        }
         </script>
+        <button id="install" onclick="install()" class="btn btn-primary">Install</button>
+
         
         <section class="page-section cta">
             <div class="container">
