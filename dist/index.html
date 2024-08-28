@@ -79,7 +79,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    mode: 'no-cors', // Add 'no-cors' mode
                     body: JSON.stringify({
                         apiKey: 'TEST_API_KEY',
                         shopName: 'example.myshopify.com',
@@ -88,8 +87,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     })
                 })
             }
-            })
-        }
         </script>
         <button id="install" onclick="install()" class="btn btn-primary">Install</button>
 
