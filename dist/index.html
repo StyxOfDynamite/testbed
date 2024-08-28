@@ -79,12 +79,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     headers: {
                         'Content-Type': 'application/json'
                     },
+                    mode: 'no-cors', // Add 'no-cors' mode
                     body: JSON.stringify({
                         apiKey: 'TEST_API_KEY',
                         shopName: 'example.myshopify.com',
                         appId: 123456,
                         XFF: '172.31.5.182'
+                    })
                 })
+            }
             })
         }
         </script>
