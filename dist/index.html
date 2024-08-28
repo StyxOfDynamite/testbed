@@ -73,8 +73,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
         </section>
 
-<div id="widget-partner" data-company="hudson" data-accent-color="#39546b" data-card-color="#f8f9fa" data-text-color="#0f0202" data-button-color="#f2eded" data-cols="4" data-layout="right"/>
-<script src="https://widget.partner.io/widget.js"></script>
+        <button id="install" onclick="install()" class="btn btn-primary">Install</button>
+
+        <script>
+            function install() {
+                fetch('https://api.partner.io/install', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        apiKey: 'TEST_API_KEY',
+                        shopName: 'example.myshopify.com',
+                        appId: 123456,
+                        XFF: '82.11.210.240'
+                })
+            }
+        </script>
         
         <section class="page-section cta">
             <div class="container">
