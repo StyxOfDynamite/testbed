@@ -72,23 +72,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
         </section>
-        <script>
-            function install() {
-                fetch('https://api.partner.io/install', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        apiKey: 'TEST_API_KEY',
-                        shopName: 'example.myshopify.com',
-                        appId: 123456,
-                        XFF: '82.11.210.240'
-                    })
-                })
-            }
-        </script>
-        <button id="install" onclick="install()" class="btn btn-primary">Install</button>
+
+        <div id="widget-partner" data-company="partner-io" data-accent-color="#fed4ff" data-card-color="#ededed" data-text-color="#050202" data-button-color="#000000" data-cols="2" data-layout="top"/>
+<script src="https://widget.partner.io/partnerDirectory.js"></script>
 
         
         <section class="page-section cta">
