@@ -25,22 +25,11 @@
         href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
-</head>
-
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSWCC7RK" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <style>
         :root {
             --ember-red: #FF416C;
             --ember-orange: #FF4B2B;
-            --ember-yellow: #FF9E29;
             --ember-dark: #333;
-            --ember-light: #f4f4f4;
             --text-color: #fff;
         }
 
@@ -53,67 +42,47 @@
         }
 
         header {
-            background: linear-gradient(to right, var(--ember-red), var(--ember-orange));
+            background: var(--ember-dark);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: var(--text-color);
-            padding: 60px 20px;
-            text-align: center;
         }
 
-        header h1 {
-            font-size: 2.5rem;
+        header .logo {
+            height: 60px;
+        }
+
+        .hero {
+            background: linear-gradient(to right, var(--ember-red), var(--ember-orange));
+            color: var(--text-color);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
             margin: 0;
         }
 
-        .contact-container {
-            padding: 60px 20px;
-            max-width: 800px;
-            margin: 0 auto;
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 20px;
         }
 
-        .contact-container h2 {
-            font-size: 2rem;
+        .cta {
+            margin-top: 40px;
+        }
+
+        .cta a {
+            background: var(--text-color);
             color: var(--ember-red);
-            margin-bottom: 20px;
-        }
-
-        .contact-container p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-
-        .contact-form {
-            background: var(--ember-light);
-            padding: 40px;
-            border-radius: 10px;
-        }
-
-        .contact-form label {
-            display: block;
+            padding: 15px 40px;
+            text-decoration: none;
             font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            background: var(--ember-red);
-            color: var(--text-color);
-            padding: 12px 20px;
-            border: none;
             border-radius: 30px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .contact-form button:hover {
-            background: var(--ember-orange);
+            font-size: 1.2rem;
         }
 
         footer {
@@ -124,41 +93,31 @@
             margin-top: 60px;
         }
     </style>
-    </head>
+</head>
 
-    <body>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSWCC7RK" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <header>
-            <h1>Contact Emburn</h1>
-            <p>We'd love to hear from you! Reach out to us with any questions or feedback.</p>
-        </header>
+    <header>
+        <img src="assets/img/logo-10.png" alt="Emburn Logo" class="logo">
+    </header>
 
-        <section class="contact-container">
-            <h2>Get in Touch</h2>
-            <p>Our team is here to assist you. Fill out the form below or email us at <a
-                    href="mailto:support@emburn.com">support@emburn.agency</a> and we will get back to you as soon as
-                possible.</p>
-            <div class="contact-form">
-                <form action="#" method="get">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+    <section class="hero">
+        <h1>Ignite Your Business Growth</h1>
+        <p>Join Emburn today and discover how our tools can skyrocket your productivity.</p>
+        <div class="cta">
+            <a href="#signup">Sign Up Now</a>
+        </div>
+    </section>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+    <footer>
+        <p>&copy; 2024 Emburn. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Emburn. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-        </footer>
-
-    </body>
+</body>
 
 </html>
